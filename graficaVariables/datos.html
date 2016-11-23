@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<head>
+
+
+<script type="text/javascript">
+//crear datos aleatorios
+var min=10, max=100;
+var aleatorio = Math.random()*( max - min);
+var f=new Date();
+cad=f.getHours()+":"+f.getMinutes()+":"+f.getSeconds();
+alert("Numero aleatorio "+ aleatorio+ " el tiempo "+cad);
+
+</script>
+
+
+
+</head>
+
+<body>
+    <div>
+        <button data-user="1">Dame los datos de la persona con ID = 1</button>
+        <button data-user="[1,2,3]">Dame los datos de las personas con ID = 1, ID = 2 e ID = 3.</button>
+        <button data-user="0">Ningún usuario</button></div>
+    <div id="response-container"></div>
+
+</body>
+
+
+
+
+</html>

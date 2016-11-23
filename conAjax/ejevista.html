@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--<link rel="stylesheet" type="text/css" href="estiloCss/hojaEstilo.css"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="miscript.js"></script>
+    <style type="text/css">
+        /*escritorio*/
+
+        @media(min-width: 1200px) {
+            body {
+                color: gray;
+            }
+        }
+        /*table escritorio pequeño*/
+
+        @media(min-width: 768px)and(max-width: 979px) {
+            body {
+                color: green;
+            }
+        }
+        /*tablet o smartphone*/
+
+        @media(max-width: 767px) {
+            body {
+                color: blue;
+            }
+        }
+        /*smartphone*/
+
+        @media(max-width: 480px) {
+            body {
+                color: yellow;
+            }
+        }
+    </style>
+    <title>ejeAjax</title>
+
+
+</head>
+
+<body>
+    <div>
+        <button data-user="1">Dame los datos de la persona con ID = 1</button>
+        <button data-user="[1,2,3]">Dame los datos de las personas con ID = 1, ID = 2 e ID = 3.</button>
+        <button data-user="0">Ningún usuario</button></div>
+    <div id="response-container"></div>
+
+</body>
+
+
+
+
+</html>
